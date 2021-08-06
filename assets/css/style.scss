@@ -30,33 +30,45 @@ header{
         }
     }
 }
-
-form{
-    height: 80vh;
+.form{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    align-content: flex-start;
     background-color: #303030;
-    color: #FFF;
-    input, textarea{
-        border-radius: 1em;
-    }
-    .flex{
+    height: 80vh;
+    form{
+        width: 50vw;
+        height: 70vh;
         display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        textarea{
-            margin-left: 1em;
+        background-color: #0d818750;
+        color: #FFF;
+        border-radius: 1rem;
+        input, textarea{
+            border-radius: 1em;
         }
-    }
-    input[type="submit"]{
-        height: 5vh;
-        width: 5vw;
-        background-color: #0d8187;
-        border-style: none;
-        &:hover{
-            box-shadow: .1em .1em 1em white, -.1em -.1em 1em white;
-            color: white;
+        .flex{
+            display: flex;
+            align-items: center;
+            textarea{
+                margin-left: 1em;
+            }
+        }
+        input[type="submit"]{
+            height: 5vh;
+            width: 5vw;
+            background-color: #0d8187;
+            border-style: none;
+            &:hover{
+                box-shadow: .1em .1em 1em white, -.1em -.1em 1em white;
+                color: white;
+            }
+        }
+        select{
+            border-radius: .5rem;
         }
     }
 }

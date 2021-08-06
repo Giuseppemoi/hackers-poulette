@@ -39,8 +39,25 @@ header nav a:hover {
   color: white;
 }
 
-form {
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  background-color: #303030;
   height: 80vh;
+}
+
+.form form {
+  width: 50vw;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,15 +70,16 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #303030;
+  background-color: #0d818750;
   color: #FFF;
+  border-radius: 1rem;
 }
 
-form input, form textarea {
+.form form input, .form form textarea {
   border-radius: 1em;
 }
 
-form .flex {
+.form form .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,21 +88,25 @@ form .flex {
           align-items: center;
 }
 
-form .flex textarea {
+.form form .flex textarea {
   margin-left: 1em;
 }
 
-form input[type="submit"] {
+.form form input[type="submit"] {
   height: 5vh;
   width: 5vw;
   background-color: #0d8187;
   border-style: none;
 }
 
-form input[type="submit"]:hover {
+.form form input[type="submit"]:hover {
   -webkit-box-shadow: .1em .1em 1em white, -.1em -.1em 1em white;
           box-shadow: .1em .1em 1em white, -.1em -.1em 1em white;
   color: white;
+}
+
+.form form select {
+  border-radius: .5rem;
 }
 
 footer {
