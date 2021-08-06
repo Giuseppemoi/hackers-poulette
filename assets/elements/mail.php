@@ -8,17 +8,29 @@ require "./vendor/autoload.php";
 
 $mail = new PHPMailer(true);
 
-$all_not_empty = empty($array_post["name"]) && empty($array_post["firstname"]) && empty($array_post["gender"]) && empty($array_post["email"]) && empty($array_post["country"]) && empty($array_post["message"]);
+$post_not_empty =   !empty($array_post["name"]) && 
+                    !empty($array_post["firstname"]) && 
+                    !empty($array_post["gender"]) && 
+                    !empty($array_post["email"]) && 
+                    !empty($array_post["country"]) && 
+                    !empty($array_post["message"]);
 
+$post_is_set =  isset($_POST["name"]) &&
+                isset($_POST["firstname"]) &&
+                isset($_POST["gender"]) &&
+                isset($_POST["email"]) &&
+                isset($_POST["country"]) &&
+                isset($_POST["msg"]);
 
-if (isset($_POST["name"]) &&
-    isset($_POST["firstname"]) &&
-    isset($_POST["gender"]) &&
-    isset($_POST["email"]) &&
-    isset($_POST["country"]) &&
-    isset($_POST["msg"]) &&
-    !empty($_POST["submit"]) && !$all_not_empty)
-{
+function dump($var){
+    echo "<pre>";
+    var_dump($var);
+    echo "</pre>";
+}
+dump($post_not_empty);
+dump($post_is_set);
+
+if ($post_is_set && $post_not_empty) {
     try {
         //Server settings
         $mail->isSMTP();                                            //Send using SMTP

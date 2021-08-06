@@ -2,23 +2,23 @@
 
 
 function reset_post(){
-    $all_not_empty = 
-        empty($array_post["name"])
-        && empty($array_post["firstname"]) 
-        && empty($array_post["gender"]) 
-        && empty($array_post["email"]) 
-        && empty($array_post["country"]) 
-        && empty($array_post["message"]);
-    if (
-        isset($_POST["name"]) &&
-        isset($_POST["firstname"]) &&
-        isset($_POST["gender"]) &&
-        isset($_POST["email"]) &&
-        isset($_POST["country"]) &&
-        isset($_POST["msg"]) &&
-        !empty($_POST["submit"]) &&
-        !$all_not_empty
-    ) {
+    // $all_not_empty = 
+    //     empty($array_post["name"])
+    //     && empty($array_post["firstname"]) 
+    //     && empty($array_post["gender"]) 
+    //     && empty($array_post["email"]) 
+    //     && empty($array_post["country"]) 
+    //     && empty($array_post["message"]);
+    // if (
+    //     isset($_POST["name"]) &&
+    //     isset($_POST["firstname"]) &&
+    //     isset($_POST["gender"]) &&
+    //     isset($_POST["email"]) &&
+    //     isset($_POST["country"]) &&
+    //     isset($_POST["msg"]) &&
+    //     !empty($_POST["submit"])
+    //     //&& !$all_not_empty
+    // ) {
         global $array_post;
         foreach ($array_post as $key => $value) {
             $array_post[$key] = NULL;
@@ -37,5 +37,5 @@ function reset_post(){
         // echo "<pre>";
         // var_dump(isset($_POST["name"]));
         // echo "</pre>";
-    }
+    //}
 }
