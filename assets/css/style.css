@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  background-color: #0d8187;
+}
+
+header img {
+  padding: .5vw;
+  height: 9vh;
+}
+
+header nav {
+  display: inline-block;
+}
+
+header nav a {
+  margin: 0 4vw;
+  text-decoration: none;
+  color: #303030;
+}
+
+header nav a.active {
+  color: #FFF;
+}
+
+form {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #303030;
+  color: #FFF;
+}
+
+form input, form textarea {
+  border-radius: 1em;
+}
+
+form .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .flex textarea {
+  margin-left: 1em;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  background-color: #0d8187;
+}
+
+footer img {
+  height: 10vh;
+}
+
+footer nav {
+  display: inline-block;
+}
+
+footer nav a {
+  margin: 0 4vw;
+  text-decoration: none;
+  color: #303030;
+}
+
+footer nav a.active {
+  color: #FFF;
+}
+
+.error {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
