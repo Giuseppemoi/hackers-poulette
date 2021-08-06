@@ -24,6 +24,9 @@ header{
             &.active{
                 color: #FFF;
             }
+            &:hover{
+                color: white;
+            }
         }
     }
 }
@@ -77,6 +80,9 @@ footer{
             color: #303030;
             &.active{
                 color: #FFF;
+            }
+            &:hover{
+                color: white;
             }
         }
     }

@@ -35,6 +35,10 @@ header nav a.active {
   color: #FFF;
 }
 
+header nav a:hover {
+  color: white;
+}
+
 form {
   height: 80vh;
   display: -webkit-box;
@@ -113,6 +117,10 @@ footer nav a {
 
 footer nav a.active {
   color: #FFF;
+}
+
+footer nav a:hover {
+  color: white;
 }
 
 .error {
