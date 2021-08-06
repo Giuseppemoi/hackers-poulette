@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300;700&display=swap');
+
 body{
     margin: 0;
+    font-family: 'Bellota', cursive;
 }
 
 header{
@@ -7,6 +10,7 @@ header{
     align-items: center;
     height: 10vh;
     background-color: #0d8187;
+    font-weight: 700;
     img{
         padding: .5vw;
         height: 9vh;
@@ -42,6 +46,16 @@ form{
             margin-left: 1em;
         }
     }
+    input[type="submit"]{
+        height: 5vh;
+        width: 5vw;
+        background-color: #0d8187;
+        border-style: none;
+        &:hover{
+            box-shadow: .1em .1em 1em white, -.1em -.1em 1em white;
+            color: white;
+        }
+    }
 }
 
 
@@ -51,6 +65,7 @@ footer{
     align-items: center;
     height: 10vh;
     background-color: #0d8187;
+    font-weight: 700;
     img{
         height: 10vh;
     }
