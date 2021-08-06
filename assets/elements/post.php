@@ -17,6 +17,7 @@ if (!empty($_POST["submit"])){
             $array_error[$key] = "$key required";
         }
     }
+
 }
 
 // function dump($var){

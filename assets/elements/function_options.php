@@ -257,9 +257,14 @@ $subjects = [
 function options($array, $name_id){
     global $array_post;
     $array_options = [];
+
     foreach ($array as $value){
         $attribute = isset($array_post["$name_id"]) ? ($array_post["$name_id"] == $value ? ' selected' : '') : "";
         $array_options[] =  "<option value='$value' $attribute>$value</option>";
     }
-    return "<select name='$name_id' id='$name_id'>" . implode($array_options) . "</select>";
+
+    $chose_country = "<select name='$name_id' id='$name_id'> <option value=''>Chose a country!</option> " . implode($array_options) . " </select>";
+    $chose_subject = "<select name='$name_id' id='$name_id'>" . implode($array_options) . "</select>";
+
+    return $name_id == 'country' ? $chose_country : $chose_subject;
 }
