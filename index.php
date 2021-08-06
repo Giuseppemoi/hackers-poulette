@@ -1,7 +1,7 @@
 <?php
 include "assets/elements/header.php";
-include "assets/elements/function_options.php";
 include "assets/elements/post.php";
+include "assets/elements/function_options.php";
 include "assets/elements/function_reset_post.php";
 include "assets/elements/mail.php";
 include "assets/elements/fill_imput.php";
@@ -41,18 +41,12 @@ include "assets/elements/required.php";
         </label>
         <label for="country">
             Select your country : 
-            <select name="country" id="country">
-                <option value="<?= $country_isset ?>"> <?= $country_option ?> </option>
-                <?php options($countries); ?>
-            </select>
+            <?= options($countries, 'country'); ?>
             <?= $require_country ?>
         </label>
         <label for="subject">
             Choose a subject : 
-            <select name="subject" id="subject" >
-                <?= $subject_isset ?>
-                <?php options($subjects); ?>
-            </select>
+            <?= options($subjects, "subject"); ?>
         </label>
         <label class="flex" for="msg">
             Your message : 

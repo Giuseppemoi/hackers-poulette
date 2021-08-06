@@ -14,7 +14,7 @@ if (!empty($_POST["submit"])){
     
     foreach ($array_post as $key => $value) {
         if (empty($value)) {
-            $array_error[$key] = "Your $key is required";
+            $array_error[$key] = "$key required";
         }
     }
 }

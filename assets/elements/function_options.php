@@ -254,8 +254,12 @@ $subjects = [
     "Delivery"
 ];
 
-function options($array){
+function options($array, $name_id){
+    global $array_post;
+    $array_options = [];
     foreach ($array as $value){
-        echo "<option value='$value'>$value</option>";
+        $attribute = isset($array_post["$name_id"]) ? ($array_post["$name_id"] == $value ? ' selected' : '') : "";
+        $array_options[] =  "<option value='$value' $attribute>$value</option>";
     }
+    return "<select name='$name_id' id='$name_id'>" . implode($array_options) . "</select>";
 }
