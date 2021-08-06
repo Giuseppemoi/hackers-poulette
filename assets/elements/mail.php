@@ -51,8 +51,8 @@ if ($post_is_set && $post_not_empty) {
     
         $mail->send();
         reset_post();
-        echo 'Message has been sent';
+        echo '<p class="msg_sent">Message has been sent</p>';
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        echo "<p class='msg_not_sent'>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</p>";
     }
 }

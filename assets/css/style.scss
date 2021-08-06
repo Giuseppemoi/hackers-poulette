@@ -4,7 +4,6 @@ body{
 
 header{
     display: flex;
-    //justify-content: space-evenly;
     align-items: center;
     height: 10vh;
     background-color: #0d8187;
@@ -13,9 +12,7 @@ header{
         height: 9vh;
     }
     nav{
-        //width: 50vw;
         display: inline-block;
-        //margin-left: ;
         a{
             margin: 0 4vw;
             text-decoration: none;
@@ -72,6 +69,22 @@ footer{
 
 .error {
     color: red;
+}
+
+.msg_sent{
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    margin: 0;
+    color: white;
+}
+
+.msg_not_sent{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    margin: 0;
+    color: white;
 }
 
 input[type="text"]#website { display: none; }

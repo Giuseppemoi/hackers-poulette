@@ -102,6 +102,30 @@ footer nav a.active {
   color: red;
 }
 
+.msg_sent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: green;
+  margin: 0;
+  color: white;
+}
+
+.msg_not_sent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: red;
+  margin: 0;
+  color: white;
+}
+
 input[type="text"]#website {
   display: none;
 }
