@@ -60,6 +60,7 @@ include "assets/elements/mail.php";
             <textarea name="msg" id="msg" cols="30" rows="10"><?= (!isset($_POST["message"]) || $_POST["msg"] === NULL) ? "" : $array_post["message"]; ?></textarea>
             <?= !empty($_POST["submit"]) ? (array_key_exists("message", $array_error) ? "<strong class='error'>" . $array_error["message"] . "</strong>" : "") : "" ?>
         </label>
+        <input id="website" name="website" type="text" value=""  />
         <input type="submit" name="submit">
     </form>
 </div>

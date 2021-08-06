@@ -5,5 +5,6 @@
             <a href="" class="active">Nous Contacter</a>
         </nav>
     </footer>
+    <script src="assets/elements/script.js"></script>
 </body>
 </html>

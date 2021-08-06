@@ -101,4 +101,8 @@ footer nav a.active {
 .error {
   color: red;
 }
+
+input[type="text"]#website {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
