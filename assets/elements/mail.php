@@ -22,14 +22,6 @@ $post_is_set =  isset($_POST["name"]) &&
                 isset($_POST["country"]) &&
                 isset($_POST["msg"]);
 
-function dump($var){
-    echo "<pre>";
-    var_dump($var);
-    echo "</pre>";
-}
-dump($post_not_empty);
-dump($post_is_set);
-
 if ($post_is_set && $post_not_empty) {
     try {
         //Server settings
