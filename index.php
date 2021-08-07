@@ -11,15 +11,15 @@ include "assets/elements/required.php";
 <div class="form">
     <form action="" method="post">
         <div class="names">
-            <label for="name">
-                Name : 
-                <input type="text" name="name" id="name" value="<?= $name_isset ?>">
-                <?= $require_name ?>
-            </label>
             <label for="firstname">
                 Firstname : 
                 <input type="text" name="firstname" id="firstname" value="<?= $firstname_isset ?>">
                 <?= $require_firstname ?>
+            </label>
+            <label for="name">
+                Name : 
+                <input type="text" name="name" id="name" value="<?= $name_isset ?>">
+                <?= $require_name ?>
             </label>
         </div>
         <div class="gender">

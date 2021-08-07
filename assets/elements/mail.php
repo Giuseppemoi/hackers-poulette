@@ -34,8 +34,8 @@ if ($post_is_set && $post_not_empty) {
         $mail->Port       = 2525;               //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     
         //Recipients
-        $mail->setFrom('noreply@hackerpoulet.be', 'Mailer');
-        $mail->addAddress($array_post["email"], $array_post["name"]); //Add a recipient
+        $mail->setFrom('noreply@hackerpoulet.be', 'Hackers Poulette');
+        $mail->addAddress($array_post["email"], $array_post["firstname"] . " " . $array_post["name"]); //Add a recipient (french => destinataire)
     
         //Content
         $mail->isHTML(true);                      //Set email format to HTML
