@@ -42,13 +42,13 @@ if ($post_is_set && $post_not_empty) {
         $mail->Subject = $array_post["subject"];
         $mail->Body    = "We have received your message and we will answer you as soon as possible
             Informations Provided : 
-            <br> {$array_post['firstname']} 
-            <br> {$array_post['name']} 
-            <br> {$array_post['gender']} 
-            <br> {$array_post['email']} 
-            <br> {$array_post['country']} 
-            <br> {$array_post['subject']} 
-            <br> {$array_post['message']}";
+            <br> Firstname : {$array_post['firstname']} 
+            <br> Name : {$array_post['name']} 
+            <br> Gender : {$array_post['gender']} 
+            <br> Email address : {$array_post['email']} 
+            <br> Country : {$array_post['country']} 
+            <br> Subject : {$array_post['subject']} 
+            <br> Your message : {$array_post['message']}";
         $mail->AltBody = 'We have received your message and we will answer you as soon as possible';
     
         $mail->send();
