@@ -40,15 +40,16 @@ if ($post_is_set && $post_not_empty) {
         //Content
         $mail->isHTML(true);                      //Set email format to HTML
         $mail->Subject = $array_post["subject"];
-        $mail->Body    = "Form : 
-            <br> {$array_post['name']} 
+        $mail->Body    = "We have received your message and we will answer you as soon as possible
+            Informations Provided : 
             <br> {$array_post['firstname']} 
+            <br> {$array_post['name']} 
             <br> {$array_post['gender']} 
             <br> {$array_post['email']} 
             <br> {$array_post['country']} 
             <br> {$array_post['subject']} 
             <br> {$array_post['message']}";
-        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+        $mail->AltBody = 'We have received your message and we will answer you as soon as possible';
     
         $mail->send();
         reset_post(); // call the function to reset $_POST and varaiables
