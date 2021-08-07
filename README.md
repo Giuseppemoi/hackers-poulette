@@ -1,9 +1,8 @@
 # Hackers Poulette
 
-[![forthebadge](img_readme/uses-html.svg)](https://forthebadge.com)
-[![forthebadge](img_readme/uses-css.svg)](https://forthebadge.com)
-[![forthebadge](img_readme/uses-javascript.svg)](https://forthebadge.com)
-[![forthebadge](img_readme/uses-php.svg)](https://forthebadge.com)
+[![forthebadge](img_readme/langage-php.svg)](https://forthebadge.com)
+[![forthebadge](img_readme/semantic-html.svg)](https://forthebadge.com)
+[![forthebadge](img_readme/preprocessor-sass.svg)](https://forthebadge.com)
 
 ## The mission
 
