@@ -41,7 +41,7 @@ if ($post_is_set && $post_not_empty) {
         $mail->isHTML(true);                      //Set email format to HTML
         $mail->Subject = $array_post["subject"];
         $mail->Body    = "We have received your message and we will answer you as soon as possible
-            Informations Provided : 
+            <br> Informations Provided : 
             <br> Firstname : {$array_post['firstname']} 
             <br> Name : {$array_post['name']} 
             <br> Gender : {$array_post['gender']} 
