@@ -254,7 +254,9 @@ $subjects = [
     "Delivery"
 ];
 
-function options($array, $name_id){
+// function declaration for dinamic otions list
+function options(array $array, string $name_id): string
+{
     global $array_post;
     $array_options = [];
 

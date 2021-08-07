@@ -8,6 +8,7 @@ require "./vendor/autoload.php";
 
 $mail = new PHPMailer(true);
 
+
 $post_not_empty =   !empty($array_post["name"]) && 
                     !empty($array_post["firstname"]) && 
                     !empty($array_post["gender"]) && 
@@ -25,19 +26,19 @@ $post_is_set =  isset($_POST["name"]) &&
 if ($post_is_set && $post_not_empty) {
     try {
         //Server settings
-        $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = 'smtp.mailtrap.io';                     //Set the SMTP server to send through
-        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = '71a34291276074';                     //SMTP username
-        $mail->Password   = '8667f02d948ffc';                               //SMTP password
-        $mail->Port       = 2525;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $mail->isSMTP();                        //Send using SMTP
+        $mail->Host       = 'smtp.mailtrap.io'; //Set the SMTP server to send through
+        $mail->SMTPAuth   = true;               //Enable SMTP authentication
+        $mail->Username   = '71a34291276074';   //SMTP username
+        $mail->Password   = '8667f02d948ffc';   //SMTP password
+        $mail->Port       = 2525;               //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     
         //Recipients
         $mail->setFrom('noreply@hackerpoulet.be', 'Mailer');
-        $mail->addAddress($array_post["email"], $array_post["name"]);     //Add a recipient
+        $mail->addAddress($array_post["email"], $array_post["name"]); //Add a recipient
     
         //Content
-        $mail->isHTML(true);                                  //Set email format to HTML
+        $mail->isHTML(true);                      //Set email format to HTML
         $mail->Subject = $array_post["subject"];
         $mail->Body    = "Form : 
             <br> {$array_post['name']} 
@@ -50,7 +51,7 @@ if ($post_is_set && $post_not_empty) {
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     
         $mail->send();
-        reset_post();
+        reset_post(); // call the function to reset $_POST and varaiables
         echo '<p class="msg_sent">Message has been sent</p>';
     } catch (Exception $e) {
         echo "<p class='msg_not_sent'>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</p>";

@@ -4,7 +4,7 @@ include "assets/elements/post.php";
 include "assets/elements/function_options.php";
 include "assets/elements/function_reset_post.php";
 include "assets/elements/mail.php";
-include "assets/elements/fill_imput.php";
+include "assets/elements/fill_input.php";
 include "assets/elements/required.php";
 ?>
 

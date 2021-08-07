@@ -1,5 +1,6 @@
 <?php
 
+// variables declaration to check if the inputs are fill and auto fill them if the form is not sent yet
 $name_isset = isset($_POST["name"]) ? $array_post["name"] : "";
 $firstname_isset = isset($_POST["firstname"]) ? $array_post["firstname"] : "";
 $male_gender_isset = (isset($_POST["gender"]) && $array_post["gender"] === 'male')? "checked" : "";

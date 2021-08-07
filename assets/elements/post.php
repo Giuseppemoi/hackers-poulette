@@ -1,7 +1,9 @@
 <?php
 $array_error = [];
 
-if (!empty($_POST["submit"])){
+// on click on submit button the array_post will get the inputs value with the post methode
+// then check if there is some empty inputs and push an error sentence in the array array_error
+if (isset($_POST["submit"])){
     $array_post = [
         "name" => htmlspecialchars($_POST["name"]),
         "firstname" => htmlspecialchars($_POST["firstname"]),
@@ -17,7 +19,6 @@ if (!empty($_POST["submit"])){
             $array_error[$key] = "$key required";
         }
     }
-
 }
 
 // function dump($var){
